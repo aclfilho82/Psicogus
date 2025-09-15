@@ -416,7 +416,7 @@
     <div class="container">
         <header>
             <h1><i class="fas fa-brain"></i> Quiz de Psicologia</h1>
-            <p>59 questões sobre temas essenciais da psicologia</p>
+            <p>58 questões sobre temas essenciais da psicologia</p>
         </header>
         
         <div class="progress-container">
@@ -518,7 +518,7 @@
 
     <script>
         // Banco de perguntas com distribuição equilibrada de respostas
-        const questions = [
+        const originalQuestions = [
             {
                 theme: "Funções Psíquicas",
                 question: "Durante uma avaliação neuropsicológica, um paciente de 65 anos apresenta dificuldades para reconhecer faces familiares após um AVC. Qual função psíquica está principalmente comprometida?",
@@ -552,7 +552,7 @@
                     "Manter sigilo absoluto respeitando a autonomia do adolescente",
                     "Informar imediatamente os parents sem consultar o adolescente",
                     "Quebrar o sigilo devido ao risco iminente, envolvendo a rede de apoio",
-                    "Encaminhar para psiquiatra sem informar os responsáveis",
+                    "Encaminhar para psiquiatra senza informar os responsáveis",
                     "Aguardar que o próprio adolescente conte aos parents"
                 ],
                 answer: 3, // D
@@ -615,7 +615,7 @@
                 question: "Um paciente relata que há 3 meses apresenta humor deprimido, perda de interesse, insônia, fadiga e sentimentos de inutilidade. Recentemente, começou a ter episódios de euforia, diminuição da necessidade de sono e aumento de atividade. Qual diagnóstico é mais provável?",
                 options: [
                     "Transtorno Depressivo Maior com características psicóticas",
-                    "Transtorno Bipolar Tipo I com episódio maníaco atual",
+                    "Transtorno Bipolar Tipo I con episódio maníaco atual",
                     "Transtorno de Personalidade Borderline",
                     "Transtorno Ciclotímico com oscilações de humor",
                     "Transtorno de Ajustamento com humor deprimido"
@@ -833,474 +833,469 @@
             },
             {
                 theme: "Documentos Psicológicos",
-                question: "Um juiz solicita avaliação psicológica para determinar a guarda de uma criança em processo de divórcio. Qual documento deve ser elaborado?",
+                question: "Um juiz solicita avaliação psicológica de uma criança em processo de guarda. Qual documento deve ser elaborado para apresentar ao juiz?",
                 options: [
-                    "Relatório psicológico sobre a dinâmica familiar",
-                    "Laudo psicológico pericial sobre capacidade parental",
-                    "Parecer técnico sobre preferência da criança",
-                    "Atestado de sanidade mental dos parents",
-                    "Declaração de comparecimento às sessões"
+                    "Relatório circunstanciado com histórico clínico completo",
+                    "Laudo psicológico com conclusões técnicas",
+                    "Atestado de sanidade mental da criança",
+                    "Parecer sobre a melhor opção de guarda",
+                    "Declaração de comparecimento à avaliação"
                 ],
                 answer: 3, // D
-                explanation: "Para determinação judicial de guarda, é necessário elaborar um laudo psicológico pericial."
+                explanation: "Para processos judiciais, o documento adequado é o laudo psicológico, que apresenta conclusões técnicas fundamentadas."
             },
             {
                 theme: "Código de Ética Profissional",
-                question: "Um psicólogo organizacional é pressionado pela empresa para fornecer informações sobre a saúde mental de um funcionário em licença. Como deve proceder?",
+                question: "Um psicólogo recebe um pedido de informações sobre um paciente de um advogado que não apresenta procuração do paciente. Como deve proceder?",
                 options: [
-                    "Fornecer as informações para manter o emprego",
-                    "Negar as informações mantendo o sigilo profissional",
-                    "Fornecer apenas informações gerais sobre o quadro",
-                    "Consultar o funcionário before de decidir",
-                    "Solicitar autorização judicial para quebra de sigilo"
+                    "Fornecer as informações por se tratar de um advogado",
+                    "Solicitar autorização por escrito do paciente",
+                    "Fornecer apenas informações não sigilosas",
+                    "Consultar o Conselho Regional de Psicologia",
+                    "Encaminhar o advogado diretamente ao paciente"
                 ],
                 answer: 1, // B
-                explanation: "O sigilo profissional deve ser mantido mesmo sob pressão institucional."
+                explanation: "O sigilo profissional só pode ser quebrado com autorização expressa do paciente ou por determinação judicial."
             },
             {
                 theme: "Funções Psíquicas",
-                question: "Um executivo relata que consegue manter foco em reuniões importantes, mas se distrai facilmente con notificações do celular durante tarefas rotineiras. Qual tipo de atenção está preservado e qual está comprometido?",
+                question: "Um paciente com lesão no lobo frontal apresenta dificuldades para planejar tarefas, inicia-las mas não as conclui, e age impulsivamente. Qual função cognitiva está comprometida?",
                 options: [
-                    "Atenção sustentada preservada, atenção seletiva comprometida",
-                    "Atenção seletiva preservada, atenção sustentada comprometida",
-                    "Atenção dividida preservada, atenção alternada comprometida",
-                    "Atenção automática preservada, atenção controlada comprometida",
-                    "Todas as formas de atenção estão igualmente comprometidas"
+                    "Memória episódica para eventos recentes",
+                    "Atenção sustentada e concentração",
+                    "Funções executivas e controle inibitório",
+                    "Linguagem expressiva e fluência verbal",
+                    "Percepção visual e reconhecimento de objetos"
                 ],
-                answer: 0, // A
-                explanation: "A atenção sustentada está preservada nas reuniões importantes devido à motivação e relevância."
+                answer: 2, // C
+                explanation: "O lobo frontal é responsável pelas funções executivas, incluindo planejamento, controle inibitório e flexibilidade cognitiva."
             },
             {
                 theme: "Psicodiagnóstico",
-                question: "Uma criança de 7 anos apresenta dificuldades específicas na leitura, mas desempenho normal em matemática e outras áreas. Qual avaliação complementar seria mais indicada?",
+                question: "Durante uma avaliação psicológica, um adulto apresenta respostas muito elaboradas e intelectualizadas, dificultando a obtenção de informações emocionais. Qual técnica de entrevista seria mais útil?",
                 options: [
-                    "Avaliação neurológica para investigar lesões cerebrais",
-                    "Avaliação fonoaudiológica para processamento fonológico",
-                    "Avaliação psiquiátrica para transtornos de mood",
-                    "Avaliação oftalmológica para problemas visuais",
-                    "Avaliação nutricional para deficiências vitamínicas"
+                    "Questionamento direto e confrontação",
+                    "Escuta ativa e reformulação empática",
+                    "Silêncio terapêutico prolongado",
+                    "Interpretação psicodinâmica imediata",
+                    "Encorajamento para continuar intelectualizando"
+                ],
+                answer: 1, // B
+                explanation: "A escuta ativa e reformulação empática ajudam a estabelecer rapport e acessar conteúdos emocionais."
+            },
+            {
+                theme: "Psicopatologia",
+                question: "Um paciente relata que há 2 semanas apresenta insônia, agitação psicomotora, fala acelerada, grandiosidade e gastos excessivos. Qual diagnóstico é mais provável?",
+                options: [
+                    "Transtorno Depressivo Maior com características atípicas",
+                    "Episódio Maníaco do Transtorno Bipolar",
+                    "Transtorno de Personalidade Histriônica",
+                    "Transtorno de Estresse Agudo",
+                    "Transtorno de Ansiedade Generalizada"
+                ],
+                answer: 0, // A
+                explanation: "Os sintomas descritos são característicos de um episódio maníaco."
+            },
+            {
+                theme: "Psicanálise",
+                question: "Um paciente chega atrasado à sessão e relata que sonhou que o analista estava bravo com ele. Na sessão anterior, o analista havia interpretado sua resistência. Como compreender este sonho?",
+                options: [
+                    "Expressão de culpa inconsciente pelos atrasos recorrentes",
+                    "Resistência manifestada através do conteúdo onírico",
+                    "Tentativa de agradar o analista com um sonho interessante",
+                    "Material onírico sem significado transferencial",
+                    "Expressão de raiva consciente pelo confronto anterior"
+                ],
+                answer: 3, // D
+                explanation: "Na psicanálise, sonhos sobre o analista são compreendidos como manifestações da transferência."
+            },
+            {
+                theme: "Piaget",
+                question: "Uma criança de 3 anos acredita que bonecos e animais de pelúcia têm sentimentos e intenções. Segundo Piaget, qual característica do pensamento pré-operatório isso exemplifica?",
+                options: [
+                    "Animismo - atribuição de vida a objetos inanimados",
+                    "Egocentrismo - incapacidade de ver outros pontos de vista",
+                    "Centralização - foco em aspectos salientes",
+                    "Irreversibilidade - incapacidade de reverter operações",
+                    "Artificialismo - crença de que tudo é criado por humanos"
+                ],
+                answer: 0, // A
+                explanation: "O animismo é a característica do pensamento pré-operatório que leva a criança a atribuir qualidades humanas a objetos inanimados."
+            },
+            {
+                theme: "Atendimento em Saúde",
+                question: "Um psicólogo atende um paciente com dor crônica que relata: 'Ninguém entende minha dor, os médicos dizem que não é nada'. Qual abordagem seria mais eficaz?",
+                options: [
+                    "Explicar que a dor é psicológica e não orgânica",
+                    "Validar a experiência subjetiva da dor e trabalhar o significado",
+                    "Encorajar a ignorar a dor e focar em atividades prazerosas",
+                    "Sugerir que procure outro médico para nova avaliação",
+                    "Aplicar técnicas de distração para reduzir a percepção da dor"
+                ],
+                answer: 1, // B
+                explanation: "Na dor crônica, é fundamental validar a experiência subjetiva do paciente."
+            },
+            {
+                theme: "Documentos Psicológicos",
+                question: "Um psicólogo precisa elaborar um documento para solicitar afastamento do trabalho por saúde mental. Qual documento é mais apropriado?",
+                options: [
+                    "Laudo psicológico com diagnóstico completo",
+                    "Atestado médico com CID e tempo de afastamento",
+                    "Relatório circunstanciado para o empregador",
+                    "Parecer técnico sobre condições de trabalho",
+                    "Declaração de comparecimento às sessões"
+                ],
+                answer: 1, // B
+                explanation: "Para afastamento do trabalho, é necessário atestado médico com CID e tempo de afastamento."
+            },
+            {
+                theme: "Código de Ética Profissional",
+                question: "Uma psicóloga recebe um convite para participar de um programa de TV discutindo um caso clínico famoso. Como deve proceder eticamente?",
+                options: [
+                    "Aceitar desde que não revele dados que identifiquem o paciente",
+                    "Recusar pois casos clínicos não devem ser discutidos publicamente",
+                    "Consultar o paciente antes de aceitar o convite",
+                    "Participar apenas se puder usar nome fictício para o paciente",
+                    "Aceitar desde que o programa seja de caráter estritamente educativo"
+                ],
+                answer: 1, // B
+                explanation: "O Código de Ética proíbe a exposição pública de casos clínicos, mesmo que anonimizados."
+            },
+            {
+                theme: "Funções Psíquicas",
+                question: "Um paciente com doença de Parkinson apresenta dificuldades para realizar movimentos automáticos como caminhar e engolir, mas consegue realizar movimentos voluntários quando concentrado. Qual sistema está comprometido?",
+                options: [
+                    "Sistema piramidal para movimentos voluntários",
+                    "Sistema extrapiramidal para movimentos automáticos",
+                    "Cerebelo para coordenação e equilíbrio",
+                    "Córtex motor primário para planejamento motor",
+                    "Gânglios da base para inibição motora"
                 ],
                 answer: 4, // E
-                explanation: "Dificuldades específicas na leitura (dislexia) frequentemente estão relacionadas a déficits no processamento fonológico."
-            },
-            {
-                theme: "Psicopatologia",
-                question: "Um paciente de 30 anos relata que há 2 anos apresenta medo intenso de situações sociais, evitando apresentações no trabalho and eventos sociais. Qual diagnóstico é mais provável?",
-                options: [
-                    "Transtorno de Pânico com agorafobia",
-                    "Transtorno de Ansiedade Social (Fobia Social)",
-                    "Transtorno de Personalidade Esquiva",
-                    "Transtorno de Ansiedade Generalizada",
-                    "Transtorno Obsessivo-Compulsivo"
-                ],
-                answer: 3, // D
-                explanation: "O Transtorno de Ansiedade Social é caracterizado por medo intenso e persistente de situações sociais."
-            },
-            {
-                theme: "Psicanálise",
-                question: "Uma paciente em análise desenvolve intensa paixão pelo analista, idealizando-o e fazendo declarações de amor. Como a teoria psicanalítica compreende este fenômeno?",
-                options: [
-                    "Transferência erótica que deve ser interpretada",
-                    "Contratransferência do analista mal manejada",
-                    "Sintoma de transtorno de personalidade borderline",
-                    "Resistência consciente ao processo analítico",
-                    "Atuação de conflitos edípicos não resolvidos"
-                ],
-                answer: 0, // A
-                explanation: "A transferência erótica é um fenômeno comum na análise, onde sentimentos amorosos são dirigidos ao analista."
-            },
-            {
-                theme: "Piaget",
-                question: "Um professor observa que seus alunos de 6 anos não conseguem compreender que 8 bolinhas espalhadas são a mesma quantidade de 8 bolinhas agrupadas. Qual conceito piagetiano eles ainda não desenvolveram?",
-                options: [
-                    "Permanência do objeto",
-                    "Conservação de quantidade",
-                    "Classificação hierárquica",
-                    "Reversibilidade operatória",
-                    "Seriação por tamanho"
-                ],
-                answer: 1, // B
-                explanation: "A conservação de quantidade é a compreensão de que a quantidade permanece a mesma independentemente de mudanças na aparência."
-            },
-            {
-                theme: "Atendimento em Saúde",
-                question: "Uma psicóloga em uma maternidade atende uma puérpera que apresenta tristeza intensa, choro frequente e dificuldades de vínculo com o bebê há 3 semanas após o parto. Qual hipótese diagnóstica deve ser considerada?",
-                options: [
-                    "Baby blues (melancolia pós-parto) normal",
-                    "Depressão pós-parto",
-                    "Psicose puerperal",
-                    "Transtorno de ansiedade generalizada",
-                    "Transtorno de estresse pós-traumático"
-                ],
-                answer: 1, // B
-                explanation: "A depressão pós-parto caracteriza-se por sintomas depressivos que persistem além das duas primeiras semanas após o parto."
-            },
-            {
-                theme: "Documentos Psicológicos",
-                question: "Um psicólogo clínico precisa encaminhar um paciente para psiquiatra devido à necessidade de medicação. Qual documento deve elaborar?",
-                options: [
-                    "Laudo psicológico completo com diagnóstico",
-                    "Relatório de encaminhamento com informações relevantes",
-                    "Atestado de necessidade de medicação",
-                    "Parecer técnico sobre capacidade mental",
-                    "Declaração de comparecimento às sessões"
-                ],
-                answer: 3, // D
-                explanation: "Para encaminhamento a outro profissional, o documento adequado é o relatório de encaminhamento."
-            },
-            {
-                theme: "Código de Ética Profissional",
-                question: "Um psicólogo recebe uma intimação judicial para depor sobre um paciente em processo criminal. Como deve proceder?",
-                options: [
-                    "Comparecer e fornecer todas as informações solicitadas",
-                    "Ignorar a intimação para proteger o sigilo profissional",
-                    "Comparecer mas alegar sigilo profissional",
-                    "Solicitar autorização do paciente before de comparecer",
-                    "Fornecer apenas informações que não prejudiquem o paciente"
-                ],
-                answer: 2, // C
-                explanation: "O psicólogo deve comparecer quando intimado judicialmente, mas pode e deve alegar sigilo profissional."
-            },
-            {
-                theme: "Funções Psíquicas",
-                question: "Um pianista após acidente vascular consegue tocar músicas conhecidas perfeitamente, mas não consegue aprender novas peças musicales. Qual tipo de memória está preservado e qual está comprometido?",
-                options: [
-                    "Memória declarativa preservada, memória procedural comprometida",
-                    "Memória procedural preservada, memória declarativa comprometida",
-                    "Memória de longo prazo preservada, memória de curto prazo comprometida",
-                    "Memória semântica preservada, memória episódica comprometida",
-                    "Memória implícita preservada, memória explícita comprometida"
-                ],
-                answer: 0, // A
-                explanation: "A memória procedural (habilidades motoras automatizadas) está preservada, permitindo tocar músicas já aprendidas."
+                explanation: "A doença de Parkinson afeta os gânglios da base, responsáveis pela modulação e automatização dos movimentos."
             },
             {
                 theme: "Psicodiagnóstico",
-                question: "Um adolescente de 16 anos é encaminhado por comportamentos agressivos na escola. Durante a avaliação, revela histórico de maus-tratos na infância. Qual abordagem diagnóstica é mais adequada?",
+                question: "Durante uma avaliação psicológica, um adolescente apresenta respostas evasivas e pouca colaboração. Qual estratégia seria mais adequada?",
                 options: [
-                    "Focar exclusivamente nos comportamentos agressivos atuais",
-                    "Investigar trauma e seu impacto no desenvolvimento",
-                    "Aplicar apenas testes de personalidade projetivos",
-                    "Solicitar avaliação neurológica imediatamente",
-                    "Encaminhar diretamente para tratamento medicamentoso"
+                    "Confrontar diretamente a resistência",
+                    "Interromper a avaliação e devolver o caso",
+                    "Utilizar técnicas projetivas e lúdicas",
+                    "Aplicar testes padronizados normalmente",
+                    "Comunicar aos pais sobre a falta de colaboração"
                 ],
-                answer: 3, // D
-                explanation: "É fundamental investigar o histórico de trauma e seu impacto no desenvolvimento emocional e comportamental."
+                answer: 2, // C
+                explanation: "Técnicas projetivas e lúdicas podem facilitar o engajamento de adolescentes resistentes."
             },
             {
                 theme: "Psicopatologia",
-                question: "Uma paciente de 35 anos relata que há 6 meses apresenta flashbacks, pesadelos e evitação de locais que lembram um assalto violento que sofreu. Qual diagnóstico é mais provável?",
+                question: "Um paciente relata que desde a infância sente desconforto em situações sociais, evita interações e teme ser julgado negativamente. Qual diagnóstico é mais provável?",
                 options: [
-                    "Transtorno de Ansiedade Generalizada",
-                    "Transtorno de Estresse Pós-Traumático",
-                    "Transtorno de Pânico com agorafobia",
-                    "Transtorno Dissociativo de Identidade",
-                    "Transtorno de Ajustamento con ansiedade"
+                    "Transtorno de Personalidade Esquiva",
+                    "Transtorno de Ansiedade Social",
+                    "Fobia Específica de situações sociais",
+                    "Transtorno de Personalidade Esquizoide",
+                    "Agorafobia com medo de situações públicas"
                 ],
-                answer: 1, // B
-                explanation: "O Transtorno de Estresse Pós-Traumático é caracterizado por sintomas de reexperiência, evitação e hipervigilância."
+                answer: 0, // A
+                explanation: "O Transtorno de Ansiedade Social é caracterizado por medo acentuado de situações sociais."
             },
             {
                 theme: "Psicanálise",
-                question: "Um paciente em análise sistematicamente chega no horário, mas permanece em silêncio durante a maior part of sessões. Como interpretar este comportamento na perspectiva psicanalítica?",
+                question: "Um paciente relata um sonho onde está sendo perseguido por uma figura ameaçadora. Na associação livre, lembra de discussões com o chefe. Como a psicanálise interpreta este conteúdo?",
                 options: [
-                    "Timidez natural que diminuirá com o tiempo",
-                    "Resistência inconsciente ao processo analítico",
-                    "Falta de conteúdo psíquica para verbalizar",
-                    "Técnica consciente de manipulação do setting",
-                    "Sintoma de mutismo seletivo"
+                    "Representação simbólica de conflitos inconscientes",
+                    "Expressão direta de medos conscientes",
+                    "Material onírico sem significado psicológico",
+                    "Tentativa de resolver problemas do dia anterior",
+                    "Reflexo de estresse no ambiente de trabalho"
                 ],
-                answer: 3, // D
-                explanation: "Na psicanálise, o silêncio sistemático é frequentemente compreendido como uma forma de resistência inconsciente."
+                answer: 0, // A
+                explanation: "Na psicanálise, os sonhos são compreendidos como realização simbólica de desejos e conflitos inconscientes."
             },
             {
                 theme: "Piaget",
-                question: "Uma criança de 3 anos brinca de 'casinha', assumindo diferentes papéis como mãe, pai e bebê. Segundo Piaget, qual função cognitiva esta brincadeira desenvolve?",
+                question: "Uma criança de 7 anos entende que a quantidade de água não muda quando é transferida para um recipiente de formato diferente. Segundo Piaget, qual operação mental ela desenvolveu?",
                 options: [
-                    "Pensamento lógico-matemático",
-                    "Função simbólica e representação mental",
-                    "Coordenação motora fina",
-                    "Memória de longo prazo",
-                    "Atenção sustentada"
+                    "Conservação - compreensão de que propriedades permanecem apesar de mudanças aparentes",
+                    "Reversibilidade - capacidade de mentalmente reverter uma ação",
+                    "Classificação - agrupamento de objetos por características comuns",
+                    "Seriação - ordenação de elementos por tamanho ou quantidade",
+                    "Permanência do objeto - compreensão de que objetos existem mesmo quando não visíveis"
                 ],
-                answer: 1, // B
-                explanation: "O jogo simbólico ou de faz-de-conta desenvolve a função simbólica, permitindo à criança representar mentalmente objetos, pessoas e situações ausentes."
+                answer: 0, // A
+                explanation: "A conservação é a compreensão de que certas propriedades permanecem constantes apesar das mudanças na aparência."
             },
             {
                 theme: "Atendimento em Saúde",
-                question: "Um psicólogo em uma UTI é chamado para atender familiares de um paciente em estado grave. Qual deve ser o foco principal da intervenção?",
+                question: "Um psicólogo atende um paciente com diagnóstico de HIV que relata: 'Por que eu? Não mereço isso'. Qual intervenção seria mais adequada?",
                 options: [
-                    "Convencer a família a acceptar o prognóstico médico",
-                    "Oferecer suporte emocional e facilitar a comunicação",
-                    "Aplicar técnicas de relaxamento para reduzir ansiedade",
-                    "Avaliar a capacidade de tomada de decisão da família",
-                    "Orientar sobre procedimentos médicos e hospitalares"
+                    "Explicar os modos de transmissão do vírus",
+                    "Validar os sentimentos e trabalhar o significado da doença",
+                    "Encorajar o esquecimento do diagnóstico",
+                    "Focar exclusivamente na adesão ao tratamento",
+                    "Minimizar a gravidade do diagnóstico"
                 ],
                 answer: 1, // B
-                explanation: "Em situações de crise hospitalar, o psicólogo deve oferecer suporte emocional e facilitar a expressão de sentimentos."
+                explanation: "É fundamental validar os sentimentos do paciente e trabalhar o significado subjetivo do diagnóstico."
             },
             {
                 theme: "Documentos Psicológicos",
-                question: "Um psicólogo forense precisa avaliar a credibilidade do relato de uma criança vítima de abuso sexual. Qual documento deve elaborar?",
+                question: "Um psicólogo precisa encaminhar um paciente para psiquiatria. Qual documento é mais apropriado para comunicar ao psiquiatra?",
                 options: [
-                    "Relatório psicológico sobre o desenvolvimento da criança",
-                    "Laudo psicológico pericial sobre a veracidade do relato",
-                    "Parecer técnico sobre capacidade de testemunho",
-                    "Atestado de trauma psicológico",
-                    "Declaração de comparecimento às avaliações"
+                    "Laudo psicológico completo com todos os testes aplicados",
+                    "Relatório de encaminhamento com hipóteses diagnósticas",
+                    "Atestado médico solicitando avaliação psiquiátrica",
+                    "Parecer técnico sobre necessidade de medicação",
+                    "Declaração de comparecimento às sessões"
                 ],
                 answer: 1, // B
-                explanation: "Para avaliação de credibilidade de relato em contexto forense, é necessário elaborar um laudo psicológico pericial."
+                explanation: "O relatório de encaminhamento deve conter informações relevantes para a continuidade do cuidado."
             },
             {
                 theme: "Código de Ética Profissional",
-                question: "Uma psicóloga descobre que está grávida and precisa interromper temporariamente os atendimentos. Como deve proceder with seus pacientes?",
+                question: "Um psicólogo recebe um pedido de supervisão de um profissional não-psicólogo. Como deve proceder?",
                 options: [
-                    "Interromper imediatamente sem explicações para manter privacidade",
-                    "Comunicar com antecedência e providenciar encaminhamentos adequados",
-                    "Continuar atendendo até o último mês de gravidez",
-                    "Transferir todos os casos para colegas sem consultar os pacientes",
-                    "Suspender apenas os casos mais graves"
+                    "Aceitar desde que o supervisando pague honorários adequados",
+                    "Recusar pois a supervisão é atividade restrita a psicólogos",
+                    "Consultar o CRP sobre a possibilidade excepcional",
+                    "Fornecer supervisão apenas em aspectos não técnicos",
+                    "Encaminhar para outro profissional não-psicólogo"
                 ],
                 answer: 1, // B
-                explanation: "O psicólogo deve comunicar com antecedência razoável sobre interrupções no atendimento."
+                explanation: "A supervisão em psicologia é atividade privativa do psicólogo e destinada a outros psicólogos."
             },
             {
-                theme: "Neuropsicologia",
-                question: "Um paciente após AVC apresenta dificuldades para nomear objetos quando os vê, mas consegue nomeá-los quando os toca. Qual área cerebral provavelmente foi lesionada?",
+                theme: "Funções Psíquicas",
+                question: "Um paciente com lesão no hemisfério direito apresenta dificuldade para perceber estímulos no lado esquerdo do espaço, mesmo com visão intacta. Qual condição ele apresenta?",
                 options: [
-                    "Área de Broca (produção da fala)",
-                    "Área de Wernicke (compreensão da linguagem)",
-                    "Conexões entre áreas visuais e centros de linguagem",
-                    "Córtex motor primário",
-                    "Hipocampo (formação de memórias)"
-                ],
-                answer: 2, // C
-                explanation: "A capacidade de nomear por toque preservada, mas comprometida por visão, sugere lesão nas conexões entre as áreas visuais e os centros de linguagem."
-            },
-            {
-                theme: "Terapias Cognitivas",
-                question: "Um paciente com depressão apresenta o pensamento: 'Se eu cometer um erro no trabalho, serei demitido e nunca mais conseguirei emprego'. Qual distorção cognitiva está presente?",
-                options: [
-                    "Pensamento dicotômico (tudo ou nada)",
-                    "Catastrofização e previsão do futuro",
-                    "Personalização excessiva",
-                    "Abstração seletiva",
-                    "Rotulação global"
-                ],
-                answer: 1, // B
-                explanation: "A catastrofização envolve antecipar o pior cenário possível a partir de uma situação menor."
-            },
-            {
-                theme: "Psicologia do Desenvolvimento",
-                question: "Uma mãe relata que seu bebê de 8 meses chora intensamente quando ela sai de perto e demonstra medo de estranhos. Segundo a teoria do apego, este comportamento indica:",
-                options: [
-                    "Desenvolvimento atípico e necessidade of intervenção",
-                    "Formação normal do apego seguro",
-                    "Transtorno de ansiedade de separação precoce",
-                    "Superproteção materna inadequada",
-                    "Déficit no desenvolvimento social"
-                ],
-                answer: 1, // B
-                explanation: "Por volta dos 8 meses, é normal o desenvolvimento da ansiedade de separação and medo de estranhos."
-            },
-            {
-                theme: "Psicologia Social",
-                question: "Em um experimento clássico, participantes obedeceram a ordens para aplicar choques elétricos cada vez mais fortes em outra pessoa. Qual conceito psicológico este estudo demonstra?",
-                options: [
-                    "Conformidade social",
-                    "Obediência à autoridade",
-                    "Efeito espectador",
-                    "Pensamento de grupo",
-                    "Cognição social"
-                ],
-                answer: 1, // B
-                explanation: "O experimento de Milgram demonstrou a tendência das pessoas de obedecer a figuras de autoridade."
-            },
-            {
-                theme: "Psicologia Organizacional",
-                question: "Uma empresa implementa um programa de feedback 360 graus para avaliação de desempenho. Qual é a principal vantagem desta abordagem?",
-                options: [
-                    "Redução de custos com avaliações",
-                    "Aumento da objetividade nas avaliações",
-                    "Visão mais abrangente do desempenho",
-                    "Diminuição do viés de avaliação",
-                    "Simplificação do processo de avaliação"
-                ],
-                answer: 2, // C
-                explanation: "O feedback 360 graus coleta informações de múltiplas fontes, proporcionando uma visão more abrangente e multidimensional do desempenho."
-            },
-            {
-                theme: "Avaliação Psicológica",
-                question: "Qual instrumento é mais adequado para avaliar a estrutura de personalidade of um adulto, considerando dimensões patológicas?",
-                options: [
-                    "MMPI-2 (Inventário Multifásico de Personalidade de Minnesota)",
-                    "WISC-V (Escala Wechsler de Inteligência para Crianças)",
-                    "Teste das Pirâmides Coloridas de Pfister",
-                    "Teste de Apercepção Temática (TAT)",
-                    "Escala de Inteligência Wechsler para Adultos (WAIS)"
+                    "Negligência espacial unilateral - dificuldade em atender ao hemicampo contralesional",
+                    "Hemianopsia homônima - cegueira para metade do campo visual",
+                    "Agnosia visual - incapacidade de reconhecer objetos visuais",
+                    "Apraxia - dificuldade em realizar movimentos voluntários",
+                    "Afasia - comprometimento da compreensão ou produção da linguagem"
                 ],
                 answer: 0, // A
-                explanation: "O MMPI-2 é um instrumento amplamente utilizado para avaliação de características de personalidade e psicopatologia em adultos."
+                explanation: "A negligência espacial unilateral é comum em lesões do hemisfério direito."
             },
             {
-                theme: "Técnicas de Entrevista",
-                question: "Durante uma entrevista psicológica, o paciente fica em silêncio após uma pergunta importante. Qual técnica o psicólogo deve utilizar?",
+                theme: "Psicodiagnóstico",
+                question: "Durante uma avaliação psicológica, um adulto obtém escore muito elevado na escala de validade F do MMPI-2. O que isso sugere?",
                 options: [
-                    "Preencher o silêncio com outra pergunta",
-                    "Manter o silêncio para permitir elaboração",
-                    "Interpretar imediatamente o silêncio",
-                    "Mudar de assunto para aliviar a tension",
-                    "Concluir que o paciente não quer responder"
+                    "Tentativa de parecer bem ajustado e minimizar problemas",
+                    "Tentativa de exagerar sintomas ou parecer perturbado",
+                    "Respostas aleatórias ou falta de compreensão dos itens",
+                    "Alto nível de insight e autoconhecimento",
+                    "Padrão de resposta socialmente desejável"
                 ],
                 answer: 1, // B
-                explanation: "Manter o silêncio terapêutico permite que o paciente tenha tempo para elaborar pensamentos and sentimentos."
+                explanation: "Escores elevados na escala F do MMPI-2 sugerem exagero de sintomas ou tentativa de parecer perturbado."
             },
             {
-                theme: "Psicofarmacologia",
-                question: "Um paciente with Transtorno Obsessivo-Compulsivo (TOC) grave is encaminhado para tratamento medicamentoso. Qual classe de medicamentos é considerada primeira linha?",
+                theme: "Psicopatologia",
+                question: "Um paciente relata que há 1 mês apresenta ideação paranóide, discurso desorganizado e alucinações auditivas. Qual diagnóstico é mais provável?",
                 options: [
-                    "Antipsicóticos atípicos",
-                    "Inhibidores Seletivos da Recaptação de Serotonina (ISRS)",
-                    "Benzodiazepínicos",
-                    "Estabilizadores de humor",
-                    "Antidepressivos tricíclicos"
+                    "Transtorno Delirante Persistente",
+                    "Transtorno Psicótico Breve",
+                    "Esquizofrenia Paranóide",
+                    "Transtorno Esquizoafetivo",
+                    "Transtorno de Personalidade Esquizotípica"
                 ],
                 answer: 1, // B
-                explanation: "Os Inibidores Seletivos da Recaptação de Serotonina (ISRS) são considerados tratamento de primeira linha para TOC."
+                explanation: "O Transtorno Psicótico Breve tem duração de pelo menos 1 dia mas menos de 1 mês."
             },
             {
-                theme: "Psicologia Hospitalar",
-                question: "Qual abordagem terapêutica é mais indicada para pacientes com dor crônica em contexto hospitalar?",
+                theme: "Psicanálise",
+                question: "Um paciente constantemente chega atrasado, esquece o pagamento e questiona as interpretações do analista. Como a psicanálise compreende estes comportamentos?",
                 options: [
-                    "Psicanálise clássica",
-                    "Terapia Cognitivo-Comportamental (TCC)",
-                    "Terapia Centrada na Pessoa",
-                    "Psicodrama",
-                    "Gestalt-terapia"
+                    "Resistência ao processo analítico e à descoberta do inconsciente",
+                    "Tentativa consciente de sabotar o tratamento",
+                    "Expressão de raiva transferencial não elaborada",
+                    "Características de personalidade antissocial",
+                    "Falta de motivação para a psicoterapia"
+                ],
+                answer: 0, // A
+                explanation: "Na psicanálise, comportamentos como atrasos e questionamentos constantes são compreendidos como manifestações de resistência."
+            },
+            {
+                theme: "Piaget",
+                question: "Uma criança de 2 anos procura um brinquedo que viu ser escondido debaixo de uma almofada. Segundo Piaget, qual conquista cognitiva isso demonstra?",
+                options: [
+                    "Permanência do objeto - compreensão de que objetos existem mesmo quando não visíveis",
+                    "Conservação de quantidade - entendimento de que quantidade não muda com a forma",
+                    "Egocentrismo cognitivo - incapacidade de considerar outras perspectivas",
+                    "Pensamento simbólico - capacidade de representar mentalmente objetos",
+                    "Causalidade operatória - compreensão de relações causa-efeito"
+                ],
+                answer: 0, // A
+                explanation: "A permanência do objeto é a compreensão de que objetos continuam a existir mesmo quando não podem ser vistos, ouvidos ou tocados."
+            },
+            {
+                theme: "Atendimento em Saúde",
+                question: "Um psicólogo hospitalar atende um paciente que recebeu diagnóstico de doença terminal. O paciente pergunta: 'Doutor, eu vou morrer?'. Qual resposta seria mais adequada?",
+                options: [
+                    "Dar uma resposta evasiva e mudar de assunto",
+                    "Responder com franqueza mas com sensibilidade à situação",
+                    "Dizer 'Não se preocupe, tudo vai ficar bem'",
+                    "Encaminhar a pergunta para o médico responsável",
+                    "Não responder e explorar os sentimentos do paciente"
                 ],
                 answer: 1, // B
-                explanation: "A Terapia Cognitivo-Comportamental (TCC) é particularmente eficaz no manejo da dor crônica."
+                explanation: "Em situações terminais, é importante responder com honestidade mas com sensibilidade e apoio emocional."
             },
             {
-                theme: "Psicologia Escolar",
-                question: "Uma criança com TDAH apresenta dificuldades de concentração em sala de aula. Qual estratégia pedagógica é mais recomendada?",
+                theme: "Documentos Psicológicos",
+                question: "Um psicólogo precisa documentar uma sessão de terapia para fins de reembolso do plano de saúde. Qual documento deve elaborar?",
                 options: [
-                    "Aumentar a quantidade de tarefas para casa",
-                    "Reduzir o tempo das aulas para 20 minutos",
-                    "Implementar intervalos regulares e estruturação clara",
-                    "Ignorar comportamentos de desatenção",
-                    "Manter a criança sentada na primeira fileira"
-                ],
-                answer: 2, // C
-                explanation: "Para crianças con TDAH, é recomendado implementar intervalos regulares entre atividades e estruturação clara de tarefas."
-            },
-            {
-                theme: "Neuropsicologia",
-                question: "Um paciente com lesão no lobo frontal apresenta dificuldades para planejar tarefas complexas e controlar impulsos. Qual função cognitiva está principalmente comprometida?",
-                options: [
-                    "Memória de longo prazo",
-                    "Linguagem expressiva",
-                    "Funções executivas",
-                    "Percepção visual",
-                    "Orientação espacial"
-                ],
-                answer: 2, // C
-                explanation: "O lobo frontal is responsável pelas funções executivas, que incluyen planejamento, tomada de decisão e controle inibitório."
-            },
-            {
-                theme: "Terapias Cognitivas",
-                question: "Na TCC para transtornos de ansiedade, qual técnica é frequentemente utilizada para enfrentar situações temidas?",
-                options: [
-                    "Associação livre",
-                    "Exposição gradual",
-                    "Interpretação de sonhos",
-                    "Regressão hipnótica",
-                    "Tecnicas projetivas"
+                    "Laudo psicológico com diagnóstico e prognóstico",
+                    "Relatório de evolução com dados da sessão",
+                    "Atestado de comparecimento à sessão",
+                    "Parecer técnico sobre necessidade de tratamento",
+                    "Declaração de honorários profissionais"
                 ],
                 answer: 1, // B
-                explanation: "A exposição gradual é uma técnica central na TCC para ansiedade."
+                explanation: "Para fins de reembolso, é necessário relatório de evolução contendo dados da sessão."
             },
             {
-                theme: "Psicologia do Desenvolvimento",
-                question: "Segundo Vygotsky, qual conceito descreve a diferença entre o que uma criança pode realizar sozinha e o que pode realizar com auxílio?",
+                theme: "Código de Ética Profissional",
+                question: "Uma psicóloga recebe um pedido de informações sobre um ex-paciente de 10 anos atrás. Como deve proceder?",
                 options: [
-                    "Assimilação e acomodação",
-                    "Zona de desenvolvimento proximal",
-                    "Equilibração majorante",
-                    "Pensamento operatório concreto",
-                    "Apego seguro"
+                    "Fornecer as informações pois já se passou muito tempo",
+                    "Manter o sigilo pois não tem autorização do ex-paciente",
+                    "Consultar os arquivos e fornecer apenas informações gerais",
+                    "Entrar em contato com o ex-paciente para autorização",
+                    "Fornecer apenas informações não sigilosas"
+                ],
+                answer: 3, // D
+                explanation: "O sigilo profissional é permanente, mesmo após o término do atendimento."
+            },
+            {
+                theme: "Funções Psíquicas",
+                question: "Um paciente com lesão no lobo temporal esquerdo apresenta dificuldade para compreender a linguagem falada, embora consiga produzir frases fluentemente (ainda que sem sentido). Qual condição ele apresenta?",
+                options: [
+                    "Afasia de Broca - dificuldade na produção da fala",
+                    "Afasia de Wernicke - dificuldade na compreensão da linguagem",
+                    "Afasia global - comprometimento completo da linguagem",
+                    "Afasia de condução - dificuldade na repetição de palavras",
+                    "Afasia anômica - dificuldade em encontrar palavras"
                 ],
                 answer: 1, // B
-                explanation: "A Zona de Desenvolvimento Proximal (ZDP) é um conceito fundamental na teoria de Vygotsky."
+                explanation: "A afasia de Wernicke resulta de lesão no lobo temporal esquerdo e caracteriza-se por compreensão prejudicada."
             },
             {
-                theme: "Psicologia Social",
-                question: "Qual fenômeno explica por que indivíduos tendem a se comportar de maneira diferente em grupos, reduzindo seu senso de responsabilidade pessoal?",
+                theme: "Psicodiagnóstico",
+                question: "Durante uma avaliação psicológica infantil, a criança desenha figuras humanas com proporções inadequadas e detalhes incomuns. Como interpretar este dado?",
                 options: [
-                    "Conformismo",
-                    "Polarização grupal",
-                    "Desindividuação",
-                    "Atração interpessoal",
-                    "Atribuição causal"
-                ],
-                answer: 2, // C
-                explanation: "A desindividuação ocorre quando as pessoas perdem temporariamente o senso de identidade individual em grupos."
-            },
-            {
-                theme: "Psicologia da Saúde",
-                question: "Qual abordagem é mais eficaz para promover mudanças de comportamento relacionadas à saúde em comunidades?",
-                options: [
-                    "Palestras informativas sobre os riscos à saúde",
-                    "Intervenções baseadas no modelo transteórico de mudança",
-                    "Campanhas publicitárias massivas",
-                    "Distribuição de medicamentos gratuitos",
-                    "Consultas individuais com profissionais de saúde"
+                    "Sinal específico de abuso sexual infantil",
+                    "Indicador de possível transtorno do desenvolvimento",
+                    "Expressão de criatividade e imaginação fértil",
+                    "Evidência de alta capacidade intelectual",
+                    "Manifestação de problemas visuais ou motores"
                 ],
                 answer: 1, // B
-                explanation: "Intervenções baseadas no modelo transteórico de mudança são mais eficazes porque consideram o estágio de prontidão para mudança do indivíduo."
+                explanation: "Desenhos com proporções inadequadas e detalhes incomuns podem indicar transtornos do desenvolvimento."
             },
             {
-                theme: "Psicologia Positiva",
-                question: "Qual dos seguintes conceitos is central na psicologia positiva?",
+                theme: "Psicopatologia",
+                question: "Um paciente relata que desde a adolescência sente vazio crônico, instabilidade emocional e teme abandono. Qual diagnóstico é mais provável?",
                 options: [
-                    "Ressignificação de traumas infantis",
-                    "Desenvolvimento de forças de caráter e virtudes",
-                    "Análise dos mecanismos de defesa",
-                    "Identificação de distorções cognitivas",
-                    "Interpretação de sonhos e conteúdos inconscientes"
+                    "Transtorno de Personalidade Borderline",
+                    "Transtorno de Personalidade Narcisista",
+                    "Transtorno de Personalidade Histriônica",
+                    "Transtorno de Personalidade Dependente",
+                    "Transtorno de Personalidade Esquiva"
+                ],
+                answer: 0, // A
+                explanation: "O Transtorno de Personalidade Borderline é caracterizado por instabilidade emocional, relacionamentos intensos e medo de abandono."
+            },
+            {
+                theme: "Psicanálise",
+                question: "Um paciente relata um sonho onde está nu em público e sente vergonha. Na associação livre, lembra de situações onde se sentiu exposto e julgado. Como a psicanálise interpreta este conteúdo?",
+                options: [
+                    "Expressão de desejos exhibitionistas inconscientes",
+                    "Representação de medos conscientes de humilhação",
+                    "Reflexo de ansiedade social atual",
+                    "Material onírico sem significado psicológico",
+                    "Tentativa de resolver conflitos do dia anterior"
+                ],
+                answer: 0, // A
+                explanation: "Sonhos de nudez pública são classicamente interpretados como expressão de desejos exhibitionistas ou medos de exposição."
+            },
+            {
+                theme: "Piaget",
+                question: "Uma criança de 10 meses deixa cair repetidamente um brinquedo do berço e observa onde cai. Segundo Piaget, qual estágio do desenvolvimento isso exemplifica?",
+                options: [
+                    "Estágio sensório-motor - reações circulares terciárias",
+                    "Estágio pré-operatório - egocentrismo cognitivo",
+                    "Estágio operatório concreto - conservação de quantidade",
+                    "Estágio operatório formal - pensamento hipotético-dedutivo",
+                    "Estágio sensório-motor - reações circulares primárias"
+                ],
+                answer: 0, // A
+                explanation: "As reações circulares terciárias envolvem experimentação ativa para descobrir novas propriedades dos objetos."
+            },
+            {
+                theme: "Atendimento em Saúde",
+                question: "Um psicólogo atende um paciente com câncer em estágio avançado que diz: 'Se eu morrer, pelo menos não vou sofrer mais'. Como interpretar esta fala?",
+                options: [
+                    "Sinal de depressão maior com ideação suicida",
+                    "Expressão de aceitação realista da terminalidade",
+                    "Tentativa de manipulação para chamar atenção",
+                    "Sintoma de desespero e pânico frente à morte",
+                    "Indicação de necessidade de medicação antidepressiva"
                 ],
                 answer: 1, // B
-                explanation: "A psicologia positiva foca no desenvolvimento de forças de caráter e virtudes, promovendo bem-estar e florescimento humano."
+                explanation: "Em pacientes terminais, falas sobre a morte como alívio do sofrimento podem representar aceitação realista."
             },
             {
-                theme: "Psicologia Experimental",
-                question: "Qual método de pesquisa é mais adequado para estabelecer relações de causa e efeito entre variáveis?",
+                theme: "Documentos Psicológicos",
+                question: "Um psicólogo precisa elaborar um documento para comprovar horas de supervisão para um estagiário. Qual documento é mais apropriado?",
                 options: [
-                    "Estudo de caso",
-                    "Pesquisa correlacional",
-                    "Experimento controlado",
-                    "Observação naturalística",
-                    "Entrevista estruturada"
+                    "Laudo psicológico com avaliação de competências",
+                    "Relatório de supervisão com carga horária e atividades",
+                    "Atestado de comparecimento às reuniões de supervisão",
+                    "Declaração de horas de estágio supervisionado",
+                    "Parecer técnico sobre o desempenho do estagiário"
                 ],
-                answer: 2, // C
-                explanation: "Experimentos controlados permitem aos pesquisadores manipular variáveis independentes e medir seus efeitos em variáveis dependentes, estabelecendo relações de causa e efeito."
+                answer: 3, // D
+                explanation: "Para comprovação de horas de supervisão, o documento adequado é a declaração de horas de estágio supervisionado."
+            },
+            {
+                theme: "Código de Ética Profissional",
+                question: "Uma psicóloga recebe um pedido de informações sigilosas sobre um paciente por telefone. Como deve proceder?",
+                options: [
+                    "Fornecer as informações se o interlocutor souber dados do paciente",
+                    "Solicitar autorização por escrito do paciente antes de fornecer qualquer informação",
+                    "Fornecer apenas informações não sigilosas por telefone",
+                    "Confirmar a identidade do interlocutor e depois fornecer as informações",
+                    "Encaminhar o interlocutor diretamente para o paciente"
+                ],
+                answer: 1, // B
+                explanation: "Informações sigilosas não devem ser fornecidas por telefone sem autorização expressa do paciente."
             }
         ];
 
-        // Variáveis globais do quiz
-        let currentQuestionIndex = 0;
-        let userAnswers = [];
-        let score = 0;
-        let quizStarted = false;
+        // Função para embaralhar as perguntas
+        function shuffleQuestions(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
 
-        // Elementos DOM
+        // Embaralhar as perguntas ao carregar a página
+        let questions = shuffleQuestions([...originalQuestions]);
+
+        // Variáveis de estado
+        let currentQuestionIndex = 0;
+        let userAnswers = Array(questions.length).fill(null);
+        let correctAnswersCount = 0;
+        let optionSelected = false;
+
+        // Elementos do DOM
         const questionContainer = document.getElementById('question-container');
         const resultContainer = document.getElementById('result-container');
-        const progressBar = document.getElementById('progress-bar');
-        const currentQuestionSpan = document.getElementById('current-question');
-        const totalQuestionsSpan = document.getElementById('total-questions');
-        const questionTheme = document.getElementById('question-theme');
         const questionText = document.getElementById('question-text');
         const optionsContainer = document.getElementById('options-container');
         const feedbackContainer = document.getElementById('feedback-container');
@@ -1310,10 +1305,14 @@
         const feedbackText = document.getElementById('feedback-text');
         const prevButton = document.getElementById('prev-button');
         const nextButton = document.getElementById('next-button');
+        const progressBar = document.getElementById('progress-bar');
+        const currentQuestionElement = document.getElementById('current-question');
+        const totalQuestionsElement = document.getElementById('total-questions');
+        const questionTheme = document.getElementById('question-theme');
         const finalScore = document.getElementById('final-score');
-        const correctAnswersSpan = document.getElementById('correct-answers');
-        const incorrectAnswersSpan = document.getElementById('incorrect-answers');
-        const percentageSpan = document.getElementById('percentage');
+        const correctAnswersElement = document.getElementById('correct-answers');
+        const incorrectAnswersElement = document.getElementById('incorrect-answers');
+        const percentageElement = document.getElementById('percentage');
         const scoreText = document.getElementById('score-text');
         const restartButton = document.getElementById('restart-button');
         const countA = document.getElementById('count-a');
@@ -1324,73 +1323,88 @@
 
         // Inicializar o quiz
         function initQuiz() {
-            totalQuestionsSpan.textContent = questions.length;
-            userAnswers = new Array(questions.length).fill(null);
-            loadQuestion();
-            updateNavigation();
+            totalQuestionsElement.textContent = questions.length;
+            showQuestion(currentQuestionIndex);
+            updateProgressBar();
         }
 
-        // Carregar pergunta atual
-        function loadQuestion() {
-            const question = questions[currentQuestionIndex];
-            
-            currentQuestionSpan.textContent = currentQuestionIndex + 1;
-            questionTheme.textContent = question.theme;
+        // Mostrar pergunta atual
+        function showQuestion(index) {
+            const question = questions[index];
+            currentQuestionElement.textContent = index + 1;
             questionText.textContent = question.question;
+            questionTheme.textContent = question.theme;
             
-            // Limpar container de opções
+            // Limpar opções anteriores
             optionsContainer.innerHTML = '';
             
-            // Criar opções
-            question.options.forEach((option, index) => {
+            // Adicionar novas opções
+            const optionLetters = ['A', 'B', 'C', 'D', 'E'];
+            question.options.forEach((option, i) => {
                 const optionElement = document.createElement('div');
-                optionElement.className = 'option';
-                optionElement.innerHTML = `
-                    <span class="option-letter">${String.fromCharCode(65 + index)}</span>
-                    ${option}
-                `;
-                
-                optionElement.addEventListener('click', () => selectOption(index));
-                
-                // Marcar opção selecionada
-                if (userAnswers[currentQuestionIndex] === index) {
+                optionElement.classList.add('option');
+                if (userAnswers[index] === i) {
                     optionElement.classList.add('selected');
                 }
-                
+                optionElement.innerHTML = `
+                    <span class="option-letter">${optionLetters[i]}</span>
+                    <span class="option-text">${option}</span>
+                `;
+                optionElement.addEventListener('click', () => selectOption(i));
                 optionsContainer.appendChild(optionElement);
             });
             
-            // Esconder feedback
-            feedbackContainer.style.display = 'none';
+            // Atualizar botões de navegação
+            prevButton.disabled = index === 0;
+            
+            // Mostrar feedback se a pergunta já foi respondida
+            if (userAnswers[index] !== null) {
+                showFeedback(index);
+                nextButton.disabled = false;
+            } else {
+                feedbackContainer.style.display = 'none';
+                nextButton.disabled = true;
+            }
             
             // Atualizar barra de progresso
-            const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
-            progressBar.style.width = `${progress}%`;
+            updateProgressBar();
         }
 
         // Selecionar opção
-        function selectOption(selectedIndex) {
-            userAnswers[currentQuestionIndex] = selectedIndex;
+        function selectOption(optionIndex) {
+            if (userAnswers[currentQuestionIndex] !== null) return;
             
-            // Remover seleção anterior
-            document.querySelectorAll('.option').forEach(option => {
+            userAnswers[currentQuestionIndex] = optionIndex;
+            
+            // Adicionar classe selected à opção escolhida
+            const options = optionsContainer.querySelectorAll('.option');
+            options.forEach((option, i) => {
                 option.classList.remove('selected');
+                if (i === optionIndex) {
+                    option.classList.add('selected');
+                }
             });
             
-            // Marcar opção selecionada
-            document.querySelectorAll('.option')[selectedIndex].classList.add('selected');
-            
             // Mostrar feedback
-            showFeedback(selectedIndex);
+            showFeedback(currentQuestionIndex);
             
             // Habilitar botão próximo
             nextButton.disabled = false;
+            
+            // Verificar se a resposta está correta
+            const question = questions[currentQuestionIndex];
+            if (optionIndex === question.answer) {
+                correctAnswersCount++;
+            }
         }
 
         // Mostrar feedback
-        function showFeedback(selectedIndex) {
-            const question = questions[currentQuestionIndex];
-            const isCorrect = selectedIndex === question.answer;
+        function showFeedback(index) {
+            const question = questions[index];
+            const userAnswer = userAnswers[index];
+            const isCorrect = userAnswer === question.answer;
+            
+            feedbackContainer.style.display = 'block';
             
             if (isCorrect) {
                 feedbackTitle.className = 'feedback-title correct';
@@ -1403,63 +1417,40 @@
             }
             
             feedbackText.textContent = question.explanation;
-            feedbackContainer.style.display = 'block';
             
-            // Marcar opções corretas e incorretas
-            document.querySelectorAll('.option').forEach((option, index) => {
-                if (index === question.answer) {
+            // Destacar opções corretas e incorretas
+            const options = optionsContainer.querySelectorAll('.option');
+            options.forEach((option, i) => {
+                if (i === question.answer) {
                     option.classList.add('correct');
-                } else if (index === selectedIndex && !isCorrect) {
+                } else if (i === userAnswer && !isCorrect) {
                     option.classList.add('incorrect');
                 }
             });
         }
 
-        // Atualizar navegação
-        function updateNavigation() {
-            prevButton.disabled = currentQuestionIndex === 0;
-            
-            if (currentQuestionIndex === questions.length - 1) {
-                nextButton.innerHTML = '<i class="fas fa-flag-checkered"></i> Finalizar';
-            } else {
-                nextButton.innerHTML = 'Próxima <i class="fas fa-arrow-right"></i>';
-            }
-            
-            nextButton.disabled = userAnswers[currentQuestionIndex] === null;
-        }
-
-        // Próxima pergunta
+        // Navegar para a próxima pergunta
         function nextQuestion() {
             if (currentQuestionIndex < questions.length - 1) {
                 currentQuestionIndex++;
-                loadQuestion();
-                updateNavigation();
+                showQuestion(currentQuestionIndex);
             } else {
-                finishQuiz();
+                showResults();
             }
         }
 
-        // Pergunta anterior
+        // Navegar para a pergunta anterior
         function prevQuestion() {
             if (currentQuestionIndex > 0) {
                 currentQuestionIndex--;
-                loadQuestion();
-                updateNavigation();
+                showQuestion(currentQuestionIndex);
             }
         }
 
-        // Finalizar quiz
-        function finishQuiz() {
-            // Calcular pontuação
-            score = 0;
-            userAnswers.forEach((answer, index) => {
-                if (answer === questions[index].answer) {
-                    score++;
-                }
-            });
-            
-            // Mostrar resultados
-            showResults();
+        // Atualizar barra de progresso
+        function updateProgressBar() {
+            const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
+            progressBar.style.width = `${progress}%`;
         }
 
         // Mostrar resultados
@@ -1467,48 +1458,50 @@
             questionContainer.style.display = 'none';
             resultContainer.style.display = 'block';
             
-            const percentage = Math.round((score / questions.length) * 100);
-            const incorrectAnswers = questions.length - score;
+            const percentage = Math.round((correctAnswersCount / questions.length) * 100);
             
-            finalScore.textContent = score;
-            correctAnswersSpan.textContent = score;
-            incorrectAnswersSpan.textContent = incorrectAnswers;
-            percentageSpan.textContent = `${percentage}%`;
+            finalScore.textContent = `${correctAnswersCount}/${questions.length}`;
+            correctAnswersElement.textContent = correctAnswersCount;
+            incorrectAnswersElement.textContent = questions.length - correctAnswersCount;
+            percentageElement.textContent = `${percentage}%`;
             
-            // Calcular distribuição das respostas corretas
-            const answerCounts = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0};
-            questions.forEach(question => {
-                answerCounts[question.answer]++;
-            });
-            
-            countA.textContent = answerCounts[0];
-            countB.textContent = answerCounts[1];
-            countC.textContent = answerCounts[2];
-            countD.textContent = answerCounts[3];
-            countE.textContent = answerCounts[4];
-            
-            // Texto personalizado baseado na pontuação
-            let message = '';
+            // Definir texto de acordo com o desempenho
             if (percentage >= 90) {
-                message = 'Excelente! Você demonstra domínio excepcional dos conceitos de psicologia. Parabéns pelo seu conhecimento aprofundado!';
-            } else if (percentage >= 80) {
-                message = 'Muito bom! Você tem um sólido conhecimento em psicologia. Continue estudando para aprimorar ainda mais seus conhecimentos.';
+                scoreText.textContent = 'Excelente! Você demonstrou um conhecimento excepcional em psicologia.';
             } else if (percentage >= 70) {
-                message = 'Bom desempenho! Você possui uma base sólida, mas há espaço para aprofundar alguns conceitos específicos.';
-            } else if (percentage >= 60) {
-                message = 'Desempenho satisfatório. Recomenda-se revisar os temas abordados para fortalecer sua base teórica.';
+                scoreText.textContent = 'Muito bom! Seu conhecimento em psicologia é bastante sólido.';
+            } else if (percentage >= 50) {
+                scoreText.textContent = 'Bom! Você tem uma base razoável em psicologia, mas pode melhorar.';
             } else {
-                message = 'É importante dedicar mais tempo ao estudo dos conceitos fundamentais da psicologia. Continue se esforçando!';
+                scoreText.textContent = 'Continue estudando! A psicologia é um campo vasto e fascinante.';
             }
             
-            scoreText.textContent = message;
+            // Contar respostas por letra
+            const answerCounts = { A: 0, B: 0, C: 0, D: 0, E: 0 };
+            const optionLetters = ['A', 'B', 'C', 'D', 'E'];
+            
+            userAnswers.forEach((answer, index) => {
+                if (answer !== null && answer === questions[index].answer) {
+                    const letter = optionLetters[answer];
+                    answerCounts[letter]++;
+                }
+            });
+            
+            countA.textContent = answerCounts.A;
+            countB.textContent = answerCounts.B;
+            countC.textContent = answerCounts.C;
+            countD.textContent = answerCounts.D;
+            countE.textContent = answerCounts.E;
         }
 
         // Reiniciar quiz
         function restartQuiz() {
+            // Embaralhar as perguntas novamente
+            questions = shuffleQuestions([...originalQuestions]);
+            
             currentQuestionIndex = 0;
-            userAnswers = [];
-            score = 0;
+            userAnswers = Array(questions.length).fill(null);
+            correctAnswersCount = 0;
             
             questionContainer.style.display = 'block';
             resultContainer.style.display = 'none';
@@ -1522,7 +1515,7 @@
         restartButton.addEventListener('click', restartQuiz);
 
         // Inicializar o quiz quando a página carregar
-        document.addEventListener('DOMContentLoaded', initQuiz);
+        window.addEventListener('load', initQuiz);
     </script>
 </body>
 </html>
